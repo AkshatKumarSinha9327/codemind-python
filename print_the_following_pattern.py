@@ -1,9 +1,10 @@
 a = int(input())
-
-for i in range(1,a+1):
-    for j in range(1,a+1):
-        if i==j:
-            print("0",end='')
+b = a-1
+for i in range(a):
+    for j in range(a):
+        if i==j or j==b:
+            print('x',end='')
         else:
-            print("x",end='')
+            print('0',end='')
     print()
+    b-=1
