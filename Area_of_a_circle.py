@@ -1,6 +1,3 @@
+r = float(input())
 
-r= float(input())
-
-area = 3.14* r**2
-
-print(area)
+print('{:.2f}'.format(3.14*r**2))
