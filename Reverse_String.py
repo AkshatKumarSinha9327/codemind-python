@@ -1,7 +1,4 @@
-s= list(input())
+x = list(map(str,input().split()))
 
-
-s.reverse()
-
-for i in s:
-    print(i,end='')
+for i in range(len(x)-1,-1,-1):
+    print(x[i],end = " ")
