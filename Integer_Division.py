@@ -1,2 +1,1 @@
-a = int(input())
-print(round(a//10))
+print(round(int(input())//10))
