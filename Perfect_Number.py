@@ -1,10 +1,8 @@
-n = int(input())
-sum1=0
-for i in range(1,n):
-    if n%i==0:
-        sum1+=i
+a = int(input())
 
-if sum1==n:
-    print("True")
-else:
-    print("False")
+s = 0
+for i in range(1,a):
+    if a%i==0:
+        s+=i
+    
+print(s==a)
