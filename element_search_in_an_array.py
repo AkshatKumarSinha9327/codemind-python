@@ -1,7 +1,4 @@
-a = int(input())
-
+n = int(input())
 x = list(map(int,input().split()))
-
-se = int(input())
-
-print(se in x)
+z = int(input())
+print(z in x)
