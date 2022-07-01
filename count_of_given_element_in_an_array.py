@@ -1,4 +1,4 @@
-a=int(input())
+n = int(input())
 x = list(map(int,input().split()))
-
-print(x.count(int(input())))
+z = int(input())
+print(x.count(z))
