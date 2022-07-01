@@ -1,8 +1,2 @@
-a = int(input())
-
-x = list(map(int,input().split()))
-max_ = x[0]
-for i in range(len(x)):
-    if max_<x[i]:
-        max_=x[i]
-print(max_)
+n = int(input())
+print(max(list(map(int,input().split()))))
