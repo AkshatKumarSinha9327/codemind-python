@@ -6,10 +6,9 @@ def prime(n):
             return False
     return True
 
-
 a,b = int(input()),int(input())
-c=0
-for i in range(1,100000000):
+
+for i in range(1,10000000):
     if prime(a+b+i):
         print(i)
         break
