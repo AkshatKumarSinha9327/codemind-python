@@ -8,7 +8,7 @@ def prime(n):
 
 n = int(input())
 x = list(map(int,input().split()))
-c=0
+c= 0 
 for i in x:
     if prime(i):
         c+=1
