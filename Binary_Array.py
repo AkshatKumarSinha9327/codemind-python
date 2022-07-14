@@ -1,9 +1,8 @@
 n = int(input())
-
-x  = list(map(int,input().split()))
-
+x = list(map(int,input().split()))
+# print(x)
 for i in x:
-    if i not in [0,1]:
+    if i!=1 and i!=0:
         print(False)
         break
 else:
