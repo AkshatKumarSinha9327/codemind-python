@@ -5,7 +5,7 @@ def prime(n):
         if n%i==0:
             return False
     return True
-
+    
 n = int(input())
 x = list(map(int,input().split()))
 k = int(input())
