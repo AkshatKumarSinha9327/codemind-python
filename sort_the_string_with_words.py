@@ -1,4 +1,3 @@
 s = input().split()
-s.sort()
-for i in s:
+for i in sorted(s):
     print(i,end=' ')
