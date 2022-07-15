@@ -1,11 +1,13 @@
 n = int(input())
-arr= list(map(int,input().split()))
+x = list(map(int,input().split()))
 a,b = map(int,input().split())
-c=0
-# print(arr,a,b)
-for i in range(n):
-    if arr[i]>=a and arr[i]<=b:
-        c+=1
-        print(arr[i],end=" ")
-if c==0:
+s = 0
+e = 0
+f=0
+for i in x:
+    if i>=a and i<=b:
+        # print(i>=a,i,a,b,i<=b)
+        print(i,end=' ')
+        f=1
+if not bool(f):
     print(-1)
