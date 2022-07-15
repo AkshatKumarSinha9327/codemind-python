@@ -1,6 +1,2 @@
-s=set(input().lower())
-c=0
-for i in s:
-    if i!=" ":
-        c+=1
-print(c)        
+s = set(input().lower().replace(' ',''))
+print(len(s))
