@@ -1,5 +1,3 @@
-s = input().lower()
-temp = []
+s = set(input().lower().replace(' ',''))
 for i in sorted(s):
-    if s.count(i)==1 and i not in temp and i!=' ':
-        print(i,end='')
+    print(i,end='')
