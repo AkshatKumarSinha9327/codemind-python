@@ -1,14 +1,17 @@
+def int_len(n):
+    c=0
+    while n:
+        c+=1
+        n//=10
+    return c
 n = int(input())
-
 x = list(map(int,input().split()))
-
-min_ = len(str(x[0]))
+mc = 100
 for i in x:
-    if len(str(i))<min_:
-        min_=len(str(i))
-
-c = 0
+    if int_len(i)<mc:
+        mc=int_len(i)
+c=0
 for i in x:
-    if min_==len(str(i)):
+    if int_len(i)==mc:
         c+=1
 print(c)
