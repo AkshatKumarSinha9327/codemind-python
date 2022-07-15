@@ -1,15 +1,12 @@
 def rev(n):
-    temp = n
-    rev = 0
-    while temp:
-        rev = rev*10 + temp%10
-        temp//=10
-    return rev
+    reve = 0
+    while n:
+        reve=reve*10 + n%10
+        n//=10
+    return reve
 
 n = int(input())
 x = list(map(int,input().split()))
-nx = []
+
 for i in x:
-    nx.append(rev(i))
-for i in nx:
-    print(i,end=' ')
+    print(rev(i),end=' ')
