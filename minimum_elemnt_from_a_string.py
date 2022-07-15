@@ -1,6 +1,10 @@
 s = input().split()
-mn = min(s[-1])
-if mn.lower() in s[-1]:
-    print(mn.lower())
+s = s[-1]
+ms = min(s)
+if ms.isupper():
+    if ms.lower() in s:
+        print(ms.lower())
+    else:
+        print(ms)
 else:
-    print(min(s[-1]))
+    print(ms)
