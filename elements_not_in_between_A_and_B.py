@@ -7,4 +7,4 @@ for i in x:
         print(i,end=' ')
         c=1
 if not bool(c):
-    print(-1)a
+    print(-1)
