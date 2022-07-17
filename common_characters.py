@@ -1,9 +1,9 @@
 s = input().lower().replace(' ','')
-s2 = input().lower()
+s1 = input().lower()
 
 temp = []
 for i in s:
-    if i not in temp and i in s2:
+    if i not in temp and i in s1:
         temp.append(i)
 for i in sorted(temp):
     print(i,end='')
