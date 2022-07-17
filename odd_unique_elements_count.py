@@ -1,8 +1,8 @@
 n = int(input())
+x = list(map(int,input().split()))
 
-x = set(map(int,input().split()))
-c=0
+temp = []
 for i in x:
-    if i%2==1:
-        c+=1
-print(c)
+    if i%2==1 and i not in temp:
+        temp.append(i)
+print(len(temp))
