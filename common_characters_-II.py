@@ -1,7 +1,6 @@
 s = input().lower().replace(' ','')
 s2 = input().lower()
-# print(s,'
-',s2)
+
 temp = []
 c=0
 for i in s:
