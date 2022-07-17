@@ -1,9 +1,9 @@
 n = int(input())
 x = list(map(int,input().split()))
-s=0
 temp = []
+s = 0
 for i in x:
-    if i%2==1 and i not in temp:
-        s+=i
+    if i not in temp and i%2==1:
         temp.append(i)
+        s+=i
 print(s)
