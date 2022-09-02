@@ -1,24 +1,18 @@
-a = int(input())
-factor =0
-for i in range(1,a+1):
-    if a%i==0:
-        factor+=1
-
-if factor==2:
-    temp = a
-    flag=0
-    while temp>0:
-        check = temp%10
-        if check==5 or check ==3:
-            flag=1
-        else:
-            flag=0
-            break
-        temp//=10
-    if flag==1:
+def prime(n):
+    if n==0 or n==1:
+        return False
+    for i in range(2,int(n**.5)+1):
+        if n%i==0:
+            return False
+    return True
+n=int(input())
+if prime(n):
+    while(n!=0):
+        res=n%10
+        n//=10
+    if(prime(res)):
         print("Mega Prime")
     else:
         print("Not Mega Prime")
-    
 else:
     print("Not Mega Prime")
